@@ -22,7 +22,7 @@ resource "aws_security_group_rule" "mysql" {
   to_port           = var.sg_ingress_rules[count.index].to_port 
   protocol          = "tcp"
   cidr_blocks       = [var.sg_ingress_rules[count.index].cidr_blocks] 
-  security_group_id = "sg-ksuyexmeuss-da"
+  security_group_id = "sg-00f0666a37f2f35da"
 }
 
 output "out"  { value = var.users[1]}
